@@ -40,7 +40,7 @@ jobs:
       id: upload_and_scan
       with:
         appname: 'Verademo'
-        version: '${{ github.run_id }}'
+        version: 'Github Actions ${{ github.run_id }}'
         filepath: 'target/verademo.war'
         vid: '${{ secrets.VERACODE_API_ID }}'
         vkey: '${{ secrets.VERACODE_API_KEY }}'
